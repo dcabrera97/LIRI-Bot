@@ -155,3 +155,148 @@ Plot: A team of explorers travel through a wormhole in space in an attempt to en
 Actors: Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow
 ------------------------------------------------------------
 
+function concertThis() {
+    var URL = "https://rest.bandsintown.com/artists/" + term + "/events?app_id=codingbootcamp"
+
+    axios.get(URL).then(function (response) {
+        var data = response.data[0]
+
+        var concertData = [
+            "Venue name: " + data.venue.name,
+            "Venue location: " + data.venue.country,
+            "Event Date: " + moment(data.datetime).format("MM/DD/YYYY")
+        ]
+        console.log(divider)
+        console.log("concert information for: " + term)
+        console.log(divider)
+        console.log(concertData[0])
+        console.log(concertData[1])
+        console.log(concertData[2])
+        addToLog(concertThis)
+    })
+}
+------------------------------------------------------------
+
+function concertThis() {
+    var URL = "https://rest.bandsintown.com/artists/" + term + "/events?app_id=codingbootcamp"
+
+    axios.get(URL).then(function (response) {
+        var data = response.data[0]
+
+        var concertData = [
+            "Venue name: " + data.venue.name,
+            "Venue location: " + data.venue.country,
+            "Event Date: " + moment(data.datetime).format("MM/DD/YYYY")
+        ]
+        console.log(divider)
+        console.log("concert information for: " + term)
+        console.log(divider)
+        console.log(concertData[0])
+        console.log(concertData[1])
+        console.log(concertData[2])
+        addToLog(concertThis)
+    })
+}
+------------------------------------------------------------
+
+function concertThis() {
+    var URL = "https://rest.bandsintown.com/artists/" + term + "/events?app_id=codingbootcamp"
+
+    axios.get(URL).then(function (response) {
+        var data = response.data[0]
+
+        var concertData = [
+            "Venue name: " + data.venue.name,
+            "Venue location: " + data.venue.country,
+            "Event Date: " + moment(data.datetime).format("MM/DD/YYYY")
+        ]
+        console.log(divider)
+        console.log("concert information for: " + term)
+        console.log(divider)
+        console.log(concertData[0])
+        console.log(concertData[1])
+        console.log(concertData[2])
+        addToLog(concertThis)
+    })
+}
+------------------------------------------------------------
+
+Artist: Method Man
+
+Song's Name: Da Rockwilder
+
+Preview Link: null
+
+Album: Blackout!
+------------------------------------------------------------
+
+Artist: Muse
+
+Song's Name: Unintended
+
+Preview Link: https://p.scdn.co/mp3-preview/174a9ef0b28bab35f77c1d0e795ec202ca7a3d8d?cid=cd0e711204e040089b7383166a2081b2
+
+Album: Showbiz
+------------------------------------------------------------
+
+Artist: Muse
+
+Song's Name: Unintended
+
+Preview Link: https://p.scdn.co/mp3-preview/174a9ef0b28bab35f77c1d0e795ec202ca7a3d8d?cid=cd0e711204e040089b7383166a2081b2
+
+Album: Showbiz
+------------------------------------------------------------
+
+Artist: Muse
+
+Song's Name: Unintended
+
+Preview Link: https://p.scdn.co/mp3-preview/174a9ef0b28bab35f77c1d0e795ec202ca7a3d8d?cid=cd0e711204e040089b7383166a2081b2
+
+Album: Showbiz
+------------------------------------------------------------
+
+Artist: Muse
+
+Song's Name: Unintended
+
+Preview Link: https://p.scdn.co/mp3-preview/174a9ef0b28bab35f77c1d0e795ec202ca7a3d8d?cid=cd0e711204e040089b7383166a2081b2
+
+Album: Showbiz
+------------------------------------------------------------
+
+Movie Title: Interstellar
+
+Year: 2014
+
+IMDB Rating: 8.6/10
+
+Rotten Tomatoes Rating: 72%
+
+Country: USA, UK, Canada
+
+Language: English
+
+Plot: A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+
+Actors: Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow
+------------------------------------------------------------
+
+Movie Title: Interstellar
+
+Year: 2014
+
+IMDB Rating: 8.6/10
+
+Rotten Tomatoes Rating: 72%
+
+Country: USA, UK, Canada
+
+Language: English
+
+Plot: A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+
+Actors: Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow
+------------------------------------------------------------
+
