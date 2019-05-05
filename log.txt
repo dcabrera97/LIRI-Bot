@@ -1,0 +1,157 @@
+function movieThis() {
+    var URL = "http://www.omdbapi.com/?apikey=trilogy&t=" + term
+    if (term) {
+        axios.get(URL).then(function (response) {
+            var data = response.data
+            var movieData = [
+                "Movie Title: " + data.Title,
+                "Year: " + data.Year,
+                "IMDB Rating: " + data.Ratings[0].Value,
+                "Rotten Tomatoes Rating: " + data.Ratings[1].Value,
+                "Country: " + data.Country,
+                "Language: " + data.Language,
+                "Plot: " + data.Plot,
+                "Actors: " + data.Actors
+            ].join("\n\n")
+            console.log(divider)
+            console.log("Movie information for: " + term)
+            console.log(divider)
+            console.log(movieData)
+            addToLog(movieThis)
+        })
+    } else {
+        axios.get("http://www.omdbapi.com/?apikey=trilogy&t=Mr.+Nobody").then(function(response){
+            var data = response.data
+            var movieData = [
+                "Movie Title: " + data.Title,
+                "Year: " + data.Year,
+                "IMDB Rating: " + data.Ratings[0].Value,
+                "Rotten Tomatoes Rating: " + data.Ratings[1].Value,
+                "Country: " + data.Country,
+                "Language: " + data.Language,
+                "Plot: " + data.Plot,
+                "Actors: " + data.Actors
+            ].join("\n\n")
+            console.log(divider)
+            console.log("Default movie information for: Mr Nobody")
+            console.log("Please enter a movie next time")
+            console.log(divider)
+            console.log(movieData)
+            addToLog(movieThis)
+        })
+    }
+}
+------------------------------------------------------------
+
+function spotifyThisSong() {
+
+    if (term) {
+        spotify.search({ type: 'track', query: term }, function (err, data) {
+            if (err) {
+                return console.log('Error occurred: ' + err);
+            }
+
+            var songData = [
+                "Artist: " + data.tracks.items[0].artists[0].name,
+                "Song's Name: " + data.tracks.items[0].name,
+                "Preview Link: " + data.tracks.items[0].preview_url,
+                "Album: " + data.tracks.items[0].album.name
+            ].join("\n\n")
+            console.log(divider)
+            console.log("Song data for: " + term)
+            console.log(divider)
+            console.log(songData)
+            addToLog(spotifyThisSong)
+        })
+    } else {
+        spotify.search({ type: 'track', query: "The Sign" }, function (err, data) {
+            if (err) {
+                return console.log('Error occurred: ' + err);
+            }
+
+            var songData = [
+                "Artist: " + data.tracks.items[0].artists[0].name,
+                "Song's Name: " + data.tracks.items[0].name,
+                "Preview Link: " + data.tracks.items[0].preview_url,
+                "Album: " + data.tracks.items[0].album.name
+            ].join("\n\n")
+            console.log(divider)
+            console.log("Default song data for: The Sign")
+            console.log("Please enter a song next time")
+            console.log(divider)
+            console.log(songData)
+            addToLog(spotifyThisSong)
+        })
+    }
+}
+------------------------------------------------------------
+
+function spotifyThisSong() {
+
+    if (term) {
+        spotify.search({ type: 'track', query: term }, function (err, data) {
+            if (err) {
+                return console.log('Error occurred: ' + err);
+            }
+
+            var songData = [
+                "Artist: " + data.tracks.items[0].artists[0].name,
+                "Song's Name: " + data.tracks.items[0].name,
+                "Preview Link: " + data.tracks.items[0].preview_url,
+                "Album: " + data.tracks.items[0].album.name
+            ].join("\n\n")
+            console.log(divider)
+            console.log("Song data for: " + term)
+            console.log(divider)
+            console.log(songData)
+            addToLog(spotifyThisSong)
+        })
+    } else {
+        spotify.search({ type: 'track', query: "The Sign" }, function (err, data) {
+            if (err) {
+                return console.log('Error occurred: ' + err);
+            }
+
+            var songData = [
+                "Artist: " + data.tracks.items[0].artists[0].name,
+                "Song's Name: " + data.tracks.items[0].name,
+                "Preview Link: " + data.tracks.items[0].preview_url,
+                "Album: " + data.tracks.items[0].album.name
+            ].join("\n\n")
+            console.log(divider)
+            console.log("Default song data for: The Sign")
+            console.log("Please enter a song next time")
+            console.log(divider)
+            console.log(songData)
+            addToLog(spotifyThisSong)
+        })
+    }
+}
+------------------------------------------------------------
+
+Artist: Muse
+
+Song's Name: Unintended
+
+Preview Link: https://p.scdn.co/mp3-preview/174a9ef0b28bab35f77c1d0e795ec202ca7a3d8d?cid=cd0e711204e040089b7383166a2081b2
+
+Album: Showbiz
+------------------------------------------------------------
+
+Movie Title: Interstellar
+
+Year: 2014
+
+IMDB Rating: 8.6/10
+
+Rotten Tomatoes Rating: 72%
+
+Country: USA, UK, Canada
+
+Language: English
+
+Plot: A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+
+Actors: Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow
+------------------------------------------------------------
+
