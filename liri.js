@@ -148,3 +148,12 @@ function addToLog(data) {
 }
 
 
+/* Pseudocode for do what it says
+
+    1. write a function to read the random.txt file using fs.readFile
+    2. find a way to read the first line in random.txt and input that text
+    into my spotifyThis function.
+
+*/
+
+
