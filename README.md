@@ -35,6 +35,6 @@ do-what-it-says
 
 ![gif](https://raw.githubusercontent.com/dcabrera97/LIRI-Bot/master/images/spotify-this.gif)
 
-#### spotify-this-song
+#### movie-this
 
 ![gif](https://raw.githubusercontent.com/dcabrera97/LIRI-Bot/master/images/movie-this.gif)
